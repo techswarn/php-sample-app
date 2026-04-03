@@ -9,6 +9,6 @@ $text = "Set a message by adding ?message=<message here> to the URL";
 if(isset($_GET['message']) && $_GET['message'] != '') {
 	$text = htmlspecialchars($_GET['message']);
 }
-sleep(4000);
+sleep(40);
 $cow = Farm::create(\Cowsayphp\Farm\Cow::class);
 echo $cow->say($text);
